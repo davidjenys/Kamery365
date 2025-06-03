@@ -176,3 +176,42 @@ h1 {
     max-width: 90%;
   }
 }
+
+.packages-table {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #e1f0ff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 64, 128, 0.15);
+}
+
+.packages-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  color: #004080;
+}
+
+.packages-table thead {
+  background-color: #007bff;
+  color: white;
+}
+
+.packages-table th,
+.packages-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #a0c8ff;
+}
+
+.packages-table tbody tr:hover {
+  background-color: #cce4ff;
+  cursor: default;
+}
+
+.packages-table td:nth-child(3) {
+  font-weight: 700;
+  color: #003366;
+}
+
