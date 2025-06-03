@@ -1,73 +1,178 @@
 body {
-  font-family: Arial, sans-serif;
-  background: #f9f9f9;
-  color: #222;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f4f6f8;
+  color: #333;
 }
 
-header {
-  background: #111;
+header, footer {
+  background-color: #004080;
   color: white;
-  padding: 1rem;
   text-align: center;
+  padding: 1.5rem;
 }
 
-nav a {
-  margin: 0 1rem;
-  color: #fff;
-  text-decoration: none;
+h1 {
+  margin: 0;
+  font-weight: 700;
 }
 
 .hero {
-  padding: 2rem;
-  background: #ddd;
   text-align: center;
+  padding: 2rem 1rem;
+  background: #e1f0ff;
+  animation: fadeIn 1.5s ease-in;
 }
 
 .hero img {
   max-width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 64, 128, 0.3);
 }
 
 .cta-button {
   display: inline-block;
   margin-top: 1rem;
   padding: 1rem 2rem;
-  background: #007bff;
+  background-color: #007bff;
   color: white;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
 }
 
-.contact-form,
-.faq {
-  max-width: 600px;
-  margin: 2rem auto;
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  background-color: #ffffff;
+}
+
+.feature {
+  flex: 1 1 300px;
+  max-width: 320px;
+  background: #f0f8ff;
   padding: 1rem;
-  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgb(0 64 128 / 0.15);
+  text-align: center;
+  animation: slideUp 1s ease forwards;
+}
+
+.feature img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
   border-radius: 8px;
 }
 
-input,
-textarea {
+.feature h3 {
+  margin-top: 1rem;
+  color: #004080;
+}
+
+.packages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+  background-color: #e1f0ff;
+}
+
+.package {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  width: 280px;
+  box-shadow: 0 3px 10px rgb(0 64 128 / 0.2);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.package:hover {
+  transform: translateY(-10px);
+}
+
+.package h3 {
+  margin: 0 0 1rem 0;
+  color: #004080;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgb(0 64 128 / 0.15);
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
   width: 100%;
   padding: 0.5rem;
   margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
 }
 
-.fade-in {
-  animation: fadeIn 1.5s ease-in;
+.contact-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
-.slide-in {
-  animation: slideIn 1s ease-out;
+
+.contact-form button:hover {
+  background-color: #0056b3;
 }
+
+/* Animations */
 @keyframes fadeIn {
   from {opacity: 0;}
   to {opacity: 1;}
 }
-@keyframes slideIn {
-  from {transform: translateY(20px); opacity: 0;}
-  to {transform: translateY(0); opacity: 1;}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .features, .packages {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature, .package {
+    max-width: 90%;
+  }
 }
