@@ -3,49 +3,73 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Kamery365 - Spolehlivá ochrana vašeho domova</title>
+  <title>Kamery365 – Bezpečnostní kamerové systémy</title>
+  <meta name="description" content="Ochrana vašeho domova i firmy. Kamerové systémy s montáží. Zabezpečte se s Kamery365." />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="images/logo-icon.png" type="image/png" />
+
+  <!-- Google Fonts pro profesionální písmo -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
   <!-- Google Analytics placeholder -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag(){ dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'G-XXXXXXXXXX');
   </script>
 </head>
 <body>
-  <header>
-    <h1>Kamery365</h1>
-    <p>Spolehlivá ochrana vašeho domova i firmy – 24/7 monitoring</p>
+  <header class="main-header">
+    <div class="container">
+      <img src="images/logo.png" alt="Kamery365 logo" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Domů</a></li>
+          <li><a href="balicky.html">Balíčky</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <section class="hero">
-    <img src="https://images.pexels.com/photos/33109/pexels-photo-33109.jpeg" alt="Dům s bezpečnostní kamerou" />
-    <h2>Když vy spíte, my hlídáme</h2>
-    <a href="balicky.html" class="cta-button">Chci vědět více</a>
-  </section>
-
-  <section class="features">
-    <div class="feature">
-      <img src="https://images.pexels.com/photos/3683058/pexels-photo-3683058.jpeg" alt="Stín zloděje" />
-      <h3>Ochrana proti zlodějům</h3>
-      <p>Odstrašující účinek a nepřetržité sledování vašeho majetku.</p>
+    <div class="hero-text">
+      <h1>Spolehlivé zabezpečení vašeho majetku</h1>
+      <p>Kamerové systémy s montáží a nastavením. Klid na 365 dní v roce – Kamery365.</p>
+      <a href="balicky.html" class="cta-button">Chci vědět více</a>
     </div>
-    <div class="feature">
-      <img src="https://images.pexels.com/photos/9198/pexels-photo.jpg" alt="Detail bezpečnostní kamery" />
-      <h3>Moderní technologie</h3>
-      <p>Kvalitní kamery s nočním viděním, aplikací a cloudovým záznamem.</p>
-    </div>
-    <div class="feature">
-      <img src="https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg" alt="Montáž kamer" />
-      <h3>Profesionální montáž</h3>
-      <p>Rychlá a čistá instalace přímo u vás doma nebo v kanceláři.</p>
+    <div class="hero-image">
+      <img src="https://cdn.pixabay.com/photo/2018/05/14/14/35/security-camera-3397164_1280.jpg" alt="Zabezpečený dům s kamerou" />
     </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Kamery365. Všechna práva vyhrazena.</p>
+  <section class="features container">
+    <h2>Proč zvolit Kamery365?</h2>
+    <div class="feature-grid">
+      <div class="feature-box">
+        <img src="https://cdn.pixabay.com/photo/2017/02/15/12/12/surveillance-2062195_960_720.jpg" alt="Kvalitní vybavení" />
+        <h3>Kvalitní technika</h3>
+        <p>Spolehlivé IP kamery, záznam, mobilní přístup.</p>
+      </div>
+      <div class="feature-box">
+        <img src="https://cdn.pixabay.com/photo/2018/03/29/11/42/technology-3277086_960_720.jpg" alt="Rychlá montáž" />
+        <h3>Rychlá montáž</h3>
+        <p>Vše nainstalujeme, nastavíme a ukážeme vám ovládání.</p>
+      </div>
+      <div class="feature-box">
+        <img src="https://cdn.pixabay.com/photo/2015/03/26/09/41/home-690317_960_720.jpg" alt="Zabezpečený dům" />
+        <h3>Zabezpečení domova</h3>
+        <p>Ochrana proti vloupání a nepovolaným osobám.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <div class="container">
+      <p>&copy; 2025 Kamery365 – Všechna práva vyhrazena.</p>
+    </div>
   </footer>
 </body>
 </html>
